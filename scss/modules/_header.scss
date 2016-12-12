@@ -1,0 +1,25 @@
+
+.global-header {
+  padding: 100px 0;
+}
+
+  .global-header-logo {
+    @include span(6);
+  }
+
+    .global-header-logo-image {
+      width: span(3);
+    }
+
+  .global-header-title {
+    @include span(6);
+
+    font-family: $industry;
+    font-weight: 300;
+    font-size: 24px;
+    letter-spacing: 1px;
+    line-height: 24px;
+    text-align: right;
+    text-transform: uppercase;
+  }
+

@@ -1,0 +1,29 @@
+
+html {
+  color: #4a4a4a;
+  font-family: $roboto;
+  -webkit-font-smoothing: antialiased;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background-color: white;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #000;
+  font-family: $industry;
+  font-weight: 700;
+}
+
+a {
+  color: darken($mint, 20%);
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

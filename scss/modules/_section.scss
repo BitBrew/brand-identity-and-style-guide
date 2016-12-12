@@ -1,0 +1,438 @@
+
+.section {
+  border-bottom: 1px solid #ddd;
+  border-top: 1px solid #ddd;
+  margin-bottom: -1px;
+  padding-top: 150px;
+  padding-bottom: 160px;
+}
+
+  .section:last-child {
+    border-bottom: none;
+  }
+
+.section.mod-shaded {
+  background: #fafafa;
+}
+
+  .section-description {
+    @include span(4);
+  }
+
+  .section-description.mod-small {
+    font-size: 16px;
+    color: #000;
+  }
+
+    .section-description-title {
+      font-size: 20px;
+      letter-spacing: 2px;
+      line-height: 1.2;
+      margin-bottom: 42px;
+      text-transform: uppercase;
+    }
+
+      .section-description-title:after {
+        content: '';
+        background: #000;
+        display: block;
+        height: 3px;
+        margin-top: 30px;
+        width: 50px;
+      }
+
+    .section-description-body {
+      color: #333;
+      font-size: 14px;
+      line-height: 1.5;
+      margin-right: 90px;
+    }
+
+      .section-description-body p {
+        margin-bottom: 2em;
+      }
+
+      .section-description-body-cta {
+        margin-top: 32px;
+      }
+
+  .section-content {
+    @include span(8 of 12 nest);
+    margin-top: 8px;
+  }
+
+  .section-content.mod-full {
+    @include span(12);
+  }
+
+    .section-content-subheading {
+      color: #666;
+      font-family: $roboto;
+      font-size: 14px;
+      font-weight: 400;
+      margin-bottom: 20px;
+    }
+
+
+/* ---------------------------- */
+
+/*specifics ...*/
+
+
+.hero {
+  background: black;
+  padding-top: 180px;
+  padding-bottom: 180px;
+}
+
+  .hero-logo {
+    display: block;
+    margin: 0 auto;
+    width: span(4 of 12);
+  }
+
+
+/* ---------------------------- */
+
+
+.brand-attributes {
+  padding-top: 120px;
+}
+
+  .brand-attributes-title {
+    color: #333;
+    font-size: 20px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    line-height: 1.2;
+    margin-bottom: 60px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+
+/* ---------------------------- */
+
+
+.logo {}
+
+  .logo-version {
+    @include span(8 of 8 nest);
+    margin-bottom: 100px;
+  }
+
+    .logo-version-subheading {
+      @include span(8 of 8);
+      margin-bottom: 32px;
+    }
+
+    .logo-version img {
+      display: block;
+    }
+
+    .logo-version-vertical-color {
+      @include span(3 of 8);
+    }
+
+    .logo-version-vertical-bw {
+      @include span(3 of 8);
+      @include pre(1 of 8);
+    }
+
+    .logo-version-horiz-color {
+      @include span(3.5 of 8);
+    }
+
+    .logo-version-horiz-bw {
+      @include span(3.5 of 8);
+      @include pre(0.5 of 8);
+    }
+
+  .logo-version.mod-mark {
+    @include span(4 of 8 nest);
+    margin-bottom: 0;
+  }
+
+    .logo-version-mark-color {
+      @include span(1 of 8);
+    }
+
+    .logo-version-mark-bw {
+      @include span(1 of 8);
+      @include pre(0.5 of 8);
+    }
+
+  .logo-version.mod-logotype {
+    @include span(4 of 8 nest);
+    margin-bottom: 0;
+  }
+
+    .logo-version-logotype {
+      @include span(4 of 8);
+      margin-top: 18px;
+    }
+
+
+/* ---------------------------- */
+
+
+.logo-construction {}
+
+  .logo-construction-subheading {
+    @include span(8 of 8);
+    margin-bottom: 42px;
+  }
+
+  .logo-construction-figure {
+    @include span(4 of 8);
+  }
+
+    .logo-construction-figure-image {
+      width: 100%;
+    }
+
+  .logo-construction-description {
+    @include span(3 of 8);
+    @include pre(1 of 8);
+  }
+
+    .logo-construction-description p {
+      color: #333;
+      font-size: 14px;
+      line-height: 1.5;
+      margin-bottom: 2em;
+      text-align: right;
+    }
+
+
+/* ---------------------------- */
+
+
+.logo-usage {}
+
+  .logo-usage-version {
+    @include span(2.6667 of 8);
+    height: span(2.667 of 8);
+    margin-bottom: 30px;
+    outline: 1px solid rgba(0,0,0,.2);
+    position: relative;
+  }
+
+  .logo-usage-version.mod-mint {
+    background: $mint;
+  }
+
+  .logo-usage-version.mod-black {
+    background: #000;
+  }
+
+    .logo-usage-version-image {
+      position: absolute;
+      left: 50%;
+      top: 48%;
+
+      -webkit-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+      }
+
+    .logo-usage-version-image.mod-vertical {
+      width: 136px;
+    }
+
+    .logo-usage-version-image.mod-horizontal {
+      width: 164px;
+    }
+
+    .logo-usage-version-image.mod-mark {
+      width: 54px;
+    }
+
+
+/* ---------------------------- */
+
+
+.typography {}
+
+  .typography-item {
+    align-items: stretch;
+    display: flex;
+    @include span(8 of 8 nest);
+    margin-bottom: 50px;
+  }
+
+    .typography-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .typography-item-label {
+      align-items: center;
+      border-right: 1px solid #999;
+      display: flex;
+      justify-content: flex-end;
+      margin-bottom: 0;
+      margin-right: 60px;
+      padding-right: 40px;
+      position: relative;
+      text-align: right;
+      width: span(2 of 8);
+    }
+
+      .typography-item-label:after {
+        background: #999;
+        content: "";
+        display: block;
+        height: 1px;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        width: 30px;
+      }
+
+    .typography-item-example {
+      margin-bottom: 8px;
+      margin-top: 8px;
+      width: span(6 of 8);
+    }
+
+      .typography-item-example-image {
+        height: 60px;
+      }
+
+      .typography-item-example-heading.mod-industry {
+        font-size: 32px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        line-height: 1.25;
+        text-transform: uppercase;
+      }
+
+      .typography-item-example-subheading.mod-industry {
+        font-size: 22px;
+        font-weight: 100;
+        letter-spacing: 2px;
+        line-height: 1.25;
+        text-transform: uppercase;
+      }
+
+      .typography-item-example-heading.mod-roboto {
+        font-family: $roboto;
+        font-size: 22px;
+        font-weight: 400;
+        margin-bottom: 20px;
+      }
+
+      .typography-item-example-body.mod-roboto {
+        font-size: 14px;
+        color: #444;
+        line-height: 24px;
+      }
+
+
+
+/* ---------------------------- */
+
+
+.typeface {
+  @include span(6);
+}
+
+  .typeface-download-button {
+    margin-top: 60px;
+  }
+
+
+
+/* ---------------------------- */
+
+
+.brand-color {}
+
+  .brand-color-item {
+    @include span(2 of 8);
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+    .brand-color-item-swatch {
+      box-shadow: inset 0 0 0 1px rgba(0,0,0,0.2);
+      height:150px;
+      width:150px;
+    }
+
+    .brand-color-item-swatch.mod-mint {
+      background: #02D298;
+    }
+
+    .brand-color-item-swatch.mod-black {
+      background: black;
+    }
+
+    .brand-color-item-swatch.mod-grey {
+      background: #333;
+    }
+
+    .brand-color-item-swatch.mod-white {
+      background: white;
+    }
+
+    .brand-color-item-name {
+      font-family: $roboto;
+      font-size: 16px;
+      letter-spacing: 0;
+      line-height: 24px;
+      margin-top: 16px;
+    }
+
+
+/* ---------------------------- */
+
+
+.brand-voice {
+  margin-left: 90px;
+  @include span(7 of 12 nest);
+}
+
+  .brand-voice-heading {
+    font-family: $roboto;
+    font-size: 32px;
+    font-weight: 400;
+  }
+
+  .brand-voice-subheading {
+    font-family: $roboto;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 48px;
+  }
+
+  .brand-voice-body {
+    font-size: 42px;
+    font-style: italic;
+    font-weight: 300;
+    line-height: 50px;
+    margin-top: 12px;
+  }
+
+
+/* ---------------------------- */
+
+
+.brand-collateral {
+  @include span(12 of 12);
+  margin-top: 18px;
+}
+
+  .brand-collateral-image {
+    width: 100%;
+  }
+
+.business-card-mockup-image {
+  width: 100%;
+}
+
+.t-shirt-image {
+  display: block;
+  @include span(6);
+}
+

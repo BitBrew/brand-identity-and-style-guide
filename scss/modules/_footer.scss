@@ -1,0 +1,29 @@
+
+.global-footer {
+  padding: 0 0 120px;
+}
+
+  .global-footer-grid {
+    border-top: 1px solid #ddd;
+  }
+
+  .global-footer-logo {
+    @include span(12 of 12);
+    margin-top: 100px;
+    text-align: center;
+  }
+
+    .global-footer-logo-image {
+      width: 40px;
+    }
+
+  .global-footer-copyright {
+    @include span(12);
+    font-family: $industry;
+    font-size: 18px;
+    letter-spacing: 3px;
+    line-height: 1.2;
+    margin-top: 16px;
+    text-align: center;
+    text-transform: uppercase;
+  }
