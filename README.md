@@ -1,5 +1,6 @@
-# living-style-guide
+# Brand Identity and Style Guide
 
+Identity and style guidelines for the BitBrew brand.
 
 ## Setup
 
@@ -38,4 +39,3 @@ include the following flag to minify:
 ```
 --style compressed
 ```
-
