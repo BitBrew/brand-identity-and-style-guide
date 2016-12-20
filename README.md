@@ -4,11 +4,18 @@ Identity and style guidelines for the BitBrew brand.
 
 ## Setup
 
-SASS:
-`gem install sass`
+If you have [Bundler](http://bundler.io/), you can install all dependencies from the `Gemfile` at one time using:
 
-SUSY:
-`gem install susy`
+```
+bundle install
+```
+
+Otherwise, install each dependency manually using:
+
+```
+gem install sass
+gem install susy
+```
 
 
 ## Compiling SASS
