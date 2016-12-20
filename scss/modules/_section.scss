@@ -124,6 +124,7 @@
     .logo-version-subheading {
       @include span(8 of 8);
       margin-bottom: 32px;
+      width: 100%;
     }
 
     .logo-version img {
@@ -435,4 +436,3 @@
   display: block;
   @include span(6);
 }
-
