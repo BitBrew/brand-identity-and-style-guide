@@ -3,6 +3,7 @@
   border-bottom: 1px solid #ddd;
   border-top: 1px solid #ddd;
   margin-bottom: -1px;
+  min-width: 1080px;
   padding-top: 150px;
   padding-bottom: 160px;
 }
@@ -389,6 +390,35 @@
 /* ---------------------------- */
 
 
+.brand-icon {
+  @include span(1 of 8);
+}
+
+  .brand-icon-image {
+    margin-bottom: 48px;
+    width: 48px;
+  }
+
+
+/* ---------------------------- */
+
+
+.brand-pattern {
+  @include span(4 of 8);
+}
+
+.brand-pattern.mod-pattern-2 {
+  box-shadow: inset 0 0 0 1px rgba(0,0,0,0.2);
+}
+
+  .brand-pattern-image {
+    width: 100%;
+  }
+
+
+/* ---------------------------- */
+
+
 .brand-voice {
   margin-left: 90px;
   @include span(7 of 12 nest);
@@ -427,6 +457,10 @@
   .brand-collateral-image {
     width: 100%;
   }
+
+.full-width-image {
+  padding: 0;
+}
 
 .business-card-mockup-image {
   width: 100%;
