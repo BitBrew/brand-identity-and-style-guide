@@ -401,6 +401,24 @@
 
 
 /* ---------------------------- */
+
+
+.brand-pattern {
+  @include span(4 of 8);
+}
+
+.brand-pattern.mod-pattern-2 {
+  box-shadow: inset 0 0 0 1px rgba(0,0,0,0.2);
+}
+
+  .brand-pattern-image {
+    width: 100%;
+  }
+
+
+/* ---------------------------- */
+
+
 .brand-voice {
   margin-left: 90px;
   @include span(7 of 12 nest);
