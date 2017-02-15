@@ -390,6 +390,17 @@
 /* ---------------------------- */
 
 
+.brand-icon {
+  @include span(1 of 8);
+}
+
+  .brand-icon-image {
+    margin-bottom: 48px;
+    width: 48px;
+  }
+
+
+/* ---------------------------- */
 .brand-voice {
   margin-left: 90px;
   @include span(7 of 12 nest);
